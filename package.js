@@ -1,8 +1,15 @@
 Package.describe({
-  summary: "A bootstrap slider control."
+    summary: "A bootstrap slider control.",
+    version: "1.0.0"
 });
 
-Package.on_use(function (api, where) {
-  api.use('jquery');
-  api.add_files(['./slider/css/slider.css', './slider/js/bootstrap-slider.js'], 'client');
+Package.onUse(function (api) {
+
+    api.versionsFrom('METEOR@1.0');
+
+    api.use('jquery');
+    api.addFiles([
+      './slider/css/slider.css',
+      './slider/js/bootstrap-slider.js'
+    ], 'client');
 });
