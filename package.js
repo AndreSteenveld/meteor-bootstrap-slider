@@ -12,4 +12,5 @@ Package.onUse(function (api) {
       './slider/css/slider.css',
       './slider/js/bootstrap-slider.js'
     ], 'client');
+    
 });
